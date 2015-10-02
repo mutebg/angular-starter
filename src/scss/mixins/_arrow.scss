@@ -1,0 +1,30 @@
+// Arrow
+// --------
+// creating arrow with css and after element
+// --------
+// Usage:
+// i {
+//  @include arrow('left', #ccc, 4px);
+// }
+//
+
+
+@mixin arrow($direction: 'down', $color: black, $size: 5px ) {
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+    
+    @if $direction == "right" {
+      transform: rotate(270deg);
+    } @else if $direction == "left" {
+     transform: rotate(90deg);
+    } @else if $direction == "top" {
+      transform: rotate(180deg);
+    }
+  }
+}

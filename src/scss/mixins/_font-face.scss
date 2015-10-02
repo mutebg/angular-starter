@@ -1,0 +1,29 @@
+//
+// SASS css: fontface
+//
+// $author      Celine Kurpershoek <celinekurpershoek$gmail.com>
+// $comment		name folder should be the same as the font-family name
+//
+
+
+//
+// $function .fontface
+// $param    {String}   name  	  the font-family and folder name
+// $param    {String}   filename  the filename
+// $return                        cross browser font-face
+//
+// $comment		name folder should be the same as the font-family name
+//
+
+// TODO: Insert correct path for the fonts
+// Local variables
+$font_root: '';
+
+@mixin fontface($name, $filename){
+  font-family: $name;
+  src: url('#{$font_root}/#{$name}/#{$filename}.eot');
+  src: url('#{$font_root}/#{$name}/#{$filename}.eot?#iefix') format('embedded-opentype'),
+  url('#{$font_root}/#{$name}/#{$filename}.woff') format('woff'),
+  url('#{$font_root}/#{$name}/#{$filename}.ttf') format('truetype'),
+  url('#{$font_root}/#{$name}/#{$filename}.svg') format('svg');
+}

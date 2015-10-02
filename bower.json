@@ -1,0 +1,8 @@
+{
+  "name": "angular-starter-kit",
+  "version": "0.0.1",
+  "description": "none",
+  "dependencies": {
+    "angular": "1.3.18"
+  }
+}

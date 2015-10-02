@@ -1,0 +1,48 @@
+//
+// less css: GRADIENTS
+//
+
+
+//
+// $function .linearGradient
+// $param    {String}   color1  hexidecimal value or color alias, defaults to black
+// $param    {String}   color2  hexidecimal value or color alias, defaults to white
+// $return                      cross browser linear gradient
+//
+
+@mixin linear-gradient($color1:#000000, $color2:#FFFFFF) {
+  background-color: $color1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $color1), color-stop(1, $color2));
+  background-image: -o-linear-gradient(bottom, $color1 0%, $color2 100%);
+  background-image: -moz-linear-gradient(bottom, $color1 0%, $color2 100%);
+  background-image: -webkit-linear-gradient(bottom, $color1 0%, $color2 100%);
+  background-image: -ms-linear-gradient(bottom, $color1 0%, $color2 100%);
+  background-image: linear-gradient(to bottom, $color1 0%, $color2 100%);
+}
+
+@mixin radial-gradient-center($centerColor, $outerColor, $innerSize, $outerSize){
+  background-color: $outerColor;
+  background-image: -webkit-gradient(radial, center center, 0px, center center, color-stop($innerSize,$centerColor), color-stop($outerSize,$outerColor));
+  background-image: -webkit-radial-gradient(50% 50%, circle circle, $centerColor $innerSize,$outerColor $outerSize);
+  background-image: -moz-radial-gradient(center, circle cover, $centerColor $innerSize, $outerColor $outerSize);
+  background-image: -o-radial-gradient(center, circle cover, $centerColor $innerSize,$outerColor $outerSize);
+  background: radial-gradient(circle at center, $centerColor $innerSize,$outerColor $outerSize);
+}
+
+@mixin horizontal-left-to-right-linear-gradient($color1:#000000, $color2:#FFFFFF) {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $color1), color-stop(1, $color2));
+  background-image: -o-linear-gradient(left, $color1 0%, $color2 100%);
+  background-image: -moz-linear-gradient(left, $color1 0%, $color2 100%);
+  background-image: -webkit-linear-gradient(left, $color1 0%, $color2 100%);
+  background-image: -ms-linear-gradient(left, $color1 0%, $color2 100%);
+  background-image: linear-gradient(to left, $color1 0%, $color2 100%);
+}
+
+@mixin horizontal-right-to-left-linear-gradient($color1:#000000, $color2:#FFFFFF) {
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, $color1), color-stop(1, $color2));
+  background-image: -o-linear-gradient(right, $color1 0%, $color2 100%);
+  background-image: -moz-linear-gradient(right, $color1 0%, $color2 100%);
+  background-image: -webkit-linear-gradient(right, $color1 0%, $color2 100%);
+  background-image: -ms-linear-gradient(right, $color1 0%, $color2 100%);
+  background-image: linear-gradient(to right, $color1 0%, $color2 100%);
+}

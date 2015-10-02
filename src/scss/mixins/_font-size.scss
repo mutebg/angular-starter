@@ -1,0 +1,19 @@
+//
+// less css: font-size
+// @author: http://www.liamjaydesigns.com/2012/07/make-font-sizing-with-rem-easy-with-scss-or-less/
+//
+
+//
+// @function .font-size
+// @param {number}  sizeValue   The size of the font in rem, default is 1.4
+// return                       Fontsize in px (fallback ie8) and rem
+//
+
+//
+// @example: @include font-size(1.8); = 18px
+//
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}

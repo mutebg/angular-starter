@@ -1,0 +1,61 @@
+/*
+*
+*
+*   MEDIA QUERIES BREAKPOINTS
+*
+*
+**/
+
+$breakpoint-m-portrait: 320px;
+$breakpoint-m-landscape-small: 400px;
+$breakpoint-m-landscape: 480px;
+$breakpoint-ph: 600px;
+$breakpoint-t-portrait: 768px;
+$breakpoint-t-landscape: 960px;
+$breakpoint-d-small: 1024px;
+$breakpoint-d-small-extended: 1080px;
+$breakpoint-d-big: 1200px;
+$breakpoint-d-large: 1800px;
+
+
+
+/*
+*
+*
+*   COLOR PALETTE
+*
+*
+**/
+
+// generic colors
+$color-red: #CA525B;
+$color-white: #FFFFFF;
+
+// background colors
+$color-bg-light-grey: #4C4D54;
+
+// text colors
+$color-text-light-grey: #8E8E8E;
+
+// borders
+$color-border-lighter-grey: #F4F5F5;
+
+/*
+*
+*
+*   TYPOGRAPHY
+*
+*
+**/
+
+// font family
+$font-family: 'Open Sans', helvetica, sans-serif;
+
+// font sizes
+$font-size-base: 16px;
+
+// font weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;

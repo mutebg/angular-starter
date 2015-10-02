@@ -1,0 +1,23 @@
+@import "../variables";
+
+// Usage example:
+
+//@media #{$min-m-portrait} {
+//  css-property: value;
+//}
+
+// MIN-WIDTH
+$min-m-portrait: 'only screen and (min-width: #{$breakpoint-m-portrait})';
+$min-m-landscape:  'only screen and (min-width: #{$breakpoint-m-landscape})';
+$min-m-landscape-small:  'only screen and (min-width: #{$breakpoint-m-landscape-small})';
+$min-ph:  'only screen and (min-width: #{$breakpoint-ph})';
+$min-t-portrait:  'only screen and (min-width: #{$breakpoint-t-portrait})';
+$min-t-landscape:  'only screen and (min-width: #{$breakpoint-t-landscape})';
+$min-d-small:  'only screen and (min-width: #{$breakpoint-d-small})';
+$min-d-small-extended:  'only screen and (min-width: #{$breakpoint-d-small-extended})';
+$min-d-big:  'only screen and (min-width: #{$breakpoint-d-big})';
+$min-d-large:  'only screen and (min-width: #{$breakpoint-d-large})';
+
+// MAX-WIDTH
+$max-m-landscape: 'only screen and (max-width: #{$breakpoint-m-landscape})';
+$max-d-small: 'only screen and (max-width: #{$breakpoint-d-small})';
